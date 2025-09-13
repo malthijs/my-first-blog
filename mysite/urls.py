@@ -22,5 +22,5 @@ from blog import views  # <-- import your views here
 urlpatterns = [
     path("admin/", admin.site.urls),
     *debug_toolbar_urls(),
-    path('', views.home, name='home'),
+    path('', include('blog.urls')),
 ]

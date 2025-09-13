@@ -6,5 +6,5 @@ from django.shortcuts import render
 from django.urls import path
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Welcome to my homepage!")
+def post_list(request):
+    return render(request, 'blog/post_list.html', {})
